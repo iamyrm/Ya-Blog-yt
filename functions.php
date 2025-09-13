@@ -5,6 +5,10 @@ function yablog_setup()
    add_theme_support('title-tag');
    add_theme_support('post-thumbnails');
    add_theme_support('html5', array('search-form', 'navigation-widgets'));
+
+   // Custom Feature image size
+   add_image_size('postListImgSize', 400, 400, true);
+   add_image_size('homeHeroBannerSize', 1000, 1300, true);
 }
 
 add_action('wp_enqueue_scripts', 'yablog_enqueue');
