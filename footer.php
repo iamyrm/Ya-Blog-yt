@@ -29,36 +29,30 @@
     <div class="row s-footer__main">
 
        <div class="column lg-5 md-6 tab-12 s-footer__about">
-          <h4>Spurgeon</h4>
+          <h4><?php esc_html(bloginfo('name')); ?></h4>
 
-          <p>
-             Lorem ipsum dolor sit amet, consectetur
-             adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation
-             ullamco laboris nisi ut aliquip ex ea commodo
-          </p>
+          <p><?php echo esc_html(get_theme_mod('setting_site_details0')); ?></p>
        </div> <!-- end s-footer__about -->
 
        <div class="column lg-5 md-6 tab-12">
           <div class="row">
              <div class="column lg-6">
-                <h4>Categories</h4>
+                <h4><?php echo esc_html(get_theme_mod('setting_site_details1')); ?></h4>
                 <ul class="link-list">
-                   <li><a href="category.php">Lifestyle</a></li>
-                   <li><a href="category.php">Workplace</a></li>
-                   <li><a href="category.php">Inspiration</a></li>
-                   <li><a href="category.php">Design</a></li>
-                   <li><a href="category.php">Health</a></li>
-                   <li><a href="category.php">Photography</a></li>
+                   <li><a href="#">Lifestyle</a></li>
+                   <li><a href="#">Workplace</a></li>
+                   <li><a href="#">Inspiration</a></li>
+                   <li><a href="#">Design</a></li>
+                   <li><a href="#">Health</a></li>
+                   <li><a href="#">Photography</a></li>
                 </ul>
              </div>
              <div class="column lg-6">
-                <h4>Site Links</h4>
+                <h4><?php echo esc_html(get_theme_mod('setting_site_details2')); ?></h4>
                 <ul class="link-list">
-                   <li><a href="index.php">Home</a></li>
-                   <li><a href="category.php">Categories</a></li>
-                   <li><a href="category.php">Blog</a></li>
+                   <li><a href="<?php echo home_url('/') ?>">Home</a></li>
+                   <li><a href="#">Categories</a></li>
+                   <li><a href="#">Blog</a></li>
                    <li><a href="about.php">About</a></li>
                    <li><a href="about.php">Contact</a></li>
                    <li><a href="#0">Terms & Policy</a></li>
@@ -74,7 +68,7 @@
        <div class="column lg-7 md-6 tab-12">
           <ul class="s-footer__social">
              <li>
-                <a href="#0">
+                <a href="<?php echo esc_html(get_theme_mod('setting_site_details3')); ?>">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
                       <path
@@ -85,7 +79,7 @@
                 </a>
              </li>
              <li>
-                <a href="#0">
+                <a href="<?php echo esc_html(get_theme_mod('setting_site_details4')); ?>">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
                       <path
@@ -96,7 +90,7 @@
                 </a>
              </li>
              <li>
-                <a href="#0">
+                <a href="<?php echo esc_html(get_theme_mod('setting_site_details5')); ?>">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
                       <path
@@ -111,7 +105,7 @@
                 </a>
              </li>
              <li>
-                <a href="#0">
+                <a href="<?php echo esc_html(get_theme_mod('setting_site_details6')); ?>">
                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                       style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
                       <path
@@ -125,8 +119,8 @@
        </div>
        <div class="column lg-5 md-6 tab-12">
           <div class="ss-copyright">
-             <span>© Copyright Spurgeon 2021</span>
-             <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+             <span>© <?php echo esc_html(get_theme_mod('setting_site_details7')); ?> <?php echo bloginfo('name') . ' ' . date("Y"); ?> </span>
+             <span>Developed by <a href="<?php echo esc_html(get_theme_mod('setting_site_details9')); ?>"><?php echo esc_html(get_theme_mod('setting_site_details8')); ?></a></span>
           </div>
        </div>
 

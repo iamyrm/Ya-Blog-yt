@@ -1,4 +1,6 @@
 <?php
+require "inc/customizer.php";
+
 add_action('after_setup_theme', 'yablog_setup');
 function yablog_setup()
 {
